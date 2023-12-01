@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio David Ramirez</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  </head>
+  
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-image: url("./images/fondo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+  </style>
+
+  <body align="center">
+
+    <nav style="height: 100vh;">
+      <br><br>
+      <h1 style="color: white; font-size: 40px;">Hola qué tal, mi nombre es David</h1>
+      <br>
+      <p style="color: white; font-size: 20px;">Soy estudiante de programación web</p>
+      <br><br>
+      <img
+          src="./images/david.png" 
+          alt="david"
+          width="250px"
+      />
+      <br><br><br>
+      <a href="#main">
+        <button style="height: 50px; width: 100px;">Empezar</button>
+      </a>
+    </nav>
+    
+    <main id="main">
+      <div data-aos="flip-left" style="color: white;">
+        <h2>Experiencias Laborales</h2> <br>
+        <li>BANPLUS. Inteligencia de Negocios</li>
+        <li>CITIBANK. Gestión de sistemas de información</li>
+      </div>
+      <br><br><br>
+      <div data-aos="fade-left" style="color: white;">
+        <h2>Educación</h2> <br>
+        <li>IESA. Análisis de datos</li>
+        <li>UBA. Inglés</li>
+        <li>UBA. Ingeniería de Sistemas</li>
+      </div>
+      <br><br><br>
+      <div data-aos="fade-right" style="color: white;">
+        <h2>Habilidades</h2> <br>
+        <li>Trabajo en equipo</li>
+        <li>Análisis de datos</li>
+        <li>Minería de datos</li>
+      </div>
+      <br><br><br>
+      <div data-aos="zoom-out-left" style="color: white;">
+        <h2>Redes Sociales</h2> <br>
+        <a href="https://www.instagram.com/adavidramirez" target="_blank">
+          <img style="width: 100px;" src="./images/instagram.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/angel-david-ramirez/" target="_blank">
+          <img style="width: 50px;" src="./images/linkedin.png" alt="">
+        </a>
+      </div>
+      <br><br>
+    </main>
+ 
+    <footer style="background-color:rgb(61, 85, 85);">
+      <br>
+      <h2>Contáctame</h2>
+      <br>
+      <p>Ingresa tus datos y trabajemos juntos!</p> 
+      <br>
+      <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Coloca tu nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" placeholder="Coloca tu apellido" name="apellido">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Coloca tu email" name="email">  
+        <br>
+        <label for="asunto">Asunto</label>
+        <input type="asunto" placeholder="En qué te puedo ayudar" name="asunto">  
+        <br><br>
+        <input type="submit" value="Enviar"> 
+      </form>        
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
